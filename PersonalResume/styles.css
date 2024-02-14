@@ -1,0 +1,115 @@
+
+
+
+
+@font-face {
+    font-family: 'Rubik Doodle Shadow';
+    src: url(RubikDoodleShadow-Regular.ttf);
+}
+body {
+    font-family: 'Rubik Doodle Shadow', Arial, Helvetica, sans-serif;
+    background-color:rgb(135, 134, 134);
+    margin: 0;
+}
+
+header {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(34, 69, 94);
+    color:black;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    text-align: center;
+    background-color: rgb(20, 91, 132);
+    color: black;
+    position: fixed;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+div {
+    padding: 20px;
+}
+
+h1 {
+    font-size:40px; 
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+    color:rgb(15, 51, 76)
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h2 ~ p {
+    color: white;
+}
+
+.float-container .column h2 ~ p:first-of-type {
+    color: wheat;
+}
+
+li:before {
+    content:"-";
+    color: white;
+}
+
+.about-container img {
+    width: 500px;
+    height: auto;
+}
+
+.animation {
+    width: 50px;
+    height: 50px;
+    background-color: wheat;
+    border-radius: 50%;
+    position: absolute;
+    animation: fadeInOut 5s infinite;
+    justify-content: center;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(+700px);
+        opacity: 1;
+    } 
+    100% {
+        opacity: 0;
+    }
+}
+
+.animation img {
+    width: 80%;
+    height: auto;
+}
